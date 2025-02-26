@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comment Exercise</title>
+  </head>
+  <style>
+    * {
+      margin: 0 0 0 2;
+    }
+    #area-comment {
+      margin-top: 15px;
+    }
+    button {
+      margin-left: 2px;
+    }
+    #comment-container {
+      margin-top: 15px;
+      width: 100%;
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+    .comment {
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+    .comment-details {
+      margin-top: 10px;
+      font-size: 14px;
+      font-style: italic;
+      color: #999;
+    }
+    .author-name {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+  </style>
+  <body>
+    <h2>Comments</h2>
+    <div class="">Share your thoughts below!</div>
+    <textarea
+      id="area-comment"
+      placeholder="Write your comment here..."
+      cols="50"
+      rows="4"
+    ></textarea
+    ><button type="submit">Submit</button>
+    <div id="comment-container">
+      <div class="comment">
+        <div class="author-comment">This is excellent article!</div>
+        <div class="comment-details">
+          <span class="author-name"> Akash </span>
+          <span class="comment-date">Today</span>
+        </div>
+      </div>
+      <div class="comment">
+        <div class="author-comment">I totally agree</div>
+        <div class="comment-details">
+          <span class="author-name"> Mrityunjay</span>
+          <span class="comment-date">Yesterday </span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

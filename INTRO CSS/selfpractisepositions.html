@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    h2 {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        margin: 0;
+    }
+    h2{
+        text-align: center;
+    }
+</style>
+<body>
+    <h2>Positioning Examples</h2>
+
+    <div style="position: static; background-color: lightblue; padding: 10px; margin-bottom: 10px;">
+        Static Position (default)
+    </div>
+
+    <div style="position: relative; background-color: lightgreen; padding: 10px; margin-bottom: 10px;">
+        Relative Position (moved 20px right and 20px down)
+        <div style="position: relative; top: 20px; left: 20px; background-color: lightgreen; padding: 10px; border: 1px solid black;">
+            Relative Position
+        </div>
+    </div>
+
+    <div style="position: absolute; top: 50px; left: 50px; background-color: lightcoral; padding: 10px; margin-bottom: 10px;">
+        Absolute Position (50px from top and left of nearest positioned ancestor)
+    </div>
+
+    <div style="position: fixed; bottom: 10px; right: 10px; background-color: lightgoldenrodyellow; padding: 10px; margin-bottom: 10px;">
+        Fixed Position (10px from bottom and right of viewport)
+    </div>
+
+    <div style="position: sticky; top: 0; background-color: lightpink; padding: 10px;">
+        Sticky Position (sticks to the top when you scroll)
+    </div>
+</body>
+</html>
