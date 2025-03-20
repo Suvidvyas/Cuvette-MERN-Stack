@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Button</title>
+  <style>
+    .btn-3d {
+      padding: 15px 30px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      background: linear-gradient(to bottom, #022033e7, #2980b9);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      position: relative;
+      box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+      transition: all 0.5s ease;
+    }
+
+    .btn-3d:hover {
+      /* top: 2px; */
+      box-shadow: 0px 5px 0px 0px #023252;
+    }
+
+    .btn-3d:active {
+      top: 7px;
+      box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <button class="btn-3d">Click Me</button>
+</body>
+</html>
