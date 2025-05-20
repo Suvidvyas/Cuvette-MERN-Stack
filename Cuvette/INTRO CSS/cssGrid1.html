@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .grid-container{
+        background-color: rgb(65, 125, 194);
+        padding: 10px;
+        display: grid;
+
+
+        /* grid-template-columns: repeat(4,100px); */
+        grid-template-columns: repeat(3,1fr);
+        /* grid-template-columns: 2fr 1fr; */
+
+
+        /* grid-template-rows: repeat(5 , 100px); */
+        /* grid-template-rows: 300px; */
+
+        /* grid-auto-rows: 200px; */
+        grid-auto-rows: minmax(200px,auto);
+        /* grid-column-gap: 10px; */
+        /* grid-row-gap: 10px; */
+        grid-gap: 20px;
+            
+
+    }
+    .grid-item{
+        background-color: antiquewhite;
+        border: 1px solid black;
+        padding: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis laborum voluptas exercitationem asperiores illo optio nam consectetur minima quasi quibusdam commodi deleniti, dolorem quas dolores modi rem quis. Expedita modi voluptates facere laborum earum porro. Illum, obcaecati odio, necessitatibus itaque architecto expedita, voluptates omnis quisquam in temporibus culpa vitae incidunt consectetur nihil et. Ad, sapiente! Maxime facere reiciendis omnis accusamus?</div>
+        <div class="grid-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam praesentium perferendis vel maxime enim deserunt dicta ea aliquid unde at necessitatibus cumque, nisi temporibus non quod sunt explicabo! Nam iusto cum explicabo odio nobis consectetur ratione sint doloremque. Accusantium voluptatum labore itaque repudiandae vero dolore odio debitis ab porro quibusdam!</div>
+        <div class="grid-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi necessitatibus voluptates, tempore ipsum, consectetur unde fugiat natus libero consequuntur ex itaque officia nam dignissimos id aspernatur et minus aut animi, voluptatibus veritatis molestiae quam ut? Itaque quos officiis odit vel delectus tempora voluptates ducimus voluptatum iste adipisci consequuntur, voluptate cumque.</div>
+        <div class="grid-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor atque iste omnis incidunt provident nihil odio a eveniet nisi iusto labore beatae ea repellat eum sed unde, quos reprehenderit assumenda doloribus! Sequi eveniet labore assumenda dignissimos pariatur consequatur veritatis dicta commodi odio cupiditate! Nisi atque et vitae officiis consectetur sint totam sunt aspernatur magni aperiam obcaecati unde molestias error doloribus illum esse quis magnam commodi, consequuntur in eius. Quisquam eum laboriosam provident eveniet, odio saepe, consequuntur magni porro consectetur sint nam, expedita delectus! Libero vero doloribus iste eum accusantium fugit?</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>      
+    </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .player{
+        width: 100%;
+    }
+    .video-container {
+      width: 70%;
+      display:inline-block;
+      vertical-align:top;
+      padding: 1em 0;
+    }
+    .video {
+      width: 100%;
+    }
+    .video-list {
+      width: 20%;
+      display:inline-block;
+      padding: 0 1em;
+      vertical-align:top;
+    }
+    .video-list ul {
+      list-style: none;
+      padding: 0;
+    }
+    .video-list ul li {
+      margin-bottom: 1em;
+    }
+    .video-list ul li img {
+      width: 50%;
+      height: 100px;
+    }
+    .video-list p {
+      padding: 0.5em 0; 
+      width: 30%;
+    }
+    .video-list ul li span{
+      font-weight: 600;
+      
+    }
+    .video-list ul li p,img{
+      display: inline-block;
+    }
+  </style>
+  <body>
+    <div class="player">
+      <div class="video-container">
+        <video class="video" controls>
+          <source
+            src="https://sample-videos.com/video123/mp4/480/big_buck_bunny_480p_20mb.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <h2>Animated cartoon for Children | 2023</h2>
+      </div>
+      <div class="video-list">
+        <ul>
+          <li>
+            <img
+              src="https://images.pexels.com/photos/29925928/pexels-photo-29925928/free-photo-of-festive-night-at-vienna-christmas-market.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="thumbnail1"
+            />
+            <p><span>Video 1</span><br />Short description of Video 1</p>
+          </li>
+          <li>
+            <img
+              src="https://images.pexels.com/photos/29884135/pexels-photo-29884135/free-photo-of-aerial-view-of-scenic-river-valley-in-austria.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="thumbnail2"
+            />
+            <p><span>Video 2</span><br />Short description of Video 2</p>
+          </li>
+          <li>
+            <img
+              src="https://images.pexels.com/photos/29870527/pexels-photo-29870527/free-photo-of-serene-lake-reflection-in-austrian-landscape.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="thumbnail3"
+            />
+            <p><span>Video 3</span><br />Short description of Video 3</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav bar</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    ul{
+        background-color: rgb(182, 182, 182);
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: fixed;  
+        top: 30px;  
+        width: 99%;
+        height: 50px;
+        margin-left: 10px;
+    }
+    li{
+        float: left;
+    }
+    li a {
+        /* border: 1px solid black; */
+        display: block;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        
+    }
+    .active {
+        /* background-color: yellowgreen; */
+        color: black;
+    }
+    li a:hover{
+        background-color: aliceblue;
+        color: black;
+    }
+    .random{
+        height: 100px;
+        background-color: rgb(176, 189, 189);   
+        color: rgb(0, 0, 0);
+        border: 10px solid black;
+        /* text-align: center; */
+    }
+    .random:nth-child(1){
+        margin-top: 90px;
+    }
+</style>
+<body>
+    <ul>
+        <li><a class="active" href="#" >Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="contact">Contact us</a></li>
+        <li><a href="itenarary">Itenarary</a></li>
+    </ul>
+    
+</body>
+</html>
