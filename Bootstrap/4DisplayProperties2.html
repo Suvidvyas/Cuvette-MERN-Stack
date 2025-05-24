@@ -1,0 +1,72 @@
+<!--
+### Key Bootstrap Classes Used:
+1. **`d-flex`**: This class applies `display: flex;` to the container, making it a flex container.
+2. **`flex-row-reverse`**: This class reverses the direction of the flex items in the row, applying `flex-direction: row-reverse;`.
+
+### How It Works:
+- The `d-flex` class makes the `<div>` a flex container.
+- The `flex-row-reverse` class reverses the order of the child elements (`.box` divs) so that the last element (`Fourth`) appears first, followed by `Third`, `Second`, and `First`.
+
+### Rendered Order:
+On the page, the boxes will appear in the following order:
+- **Fourth**
+- **Third**
+- **Second**
+- **First**
+
+### Example Output:
+The visual layout will look like this (from left to right):
+```
+Fourth | Third | Second | First
+```
+
+If you want to experiment with other flex properties, you can try:
+- `flex-row` (default row direction).
+- `flex-column` (stack items vertically).
+- `justify-content-*` (e.g., `justify-content-center`, `justify-content-between`) to control horizontal alignment.
+- `align-items-*` (e.g., `align-items-center`, `align-items-start`) to control vertical alignment.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+        .box {
+            padding: 5px;
+            border: 1px solid purple;
+            background-color: aqua;
+            color: black;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="d-flex flex-row"> 
+    <div class="box" >First</div>
+    <div class="box">Second</div>
+    <div class="box">Third</div>
+    <div class="box">Fourth</div>
+    </div>
+    <div class="d-flex flex-row justify-content-lg-center"> 
+    <div class="box" >Five</div>
+    <div class="box">Six</div>
+    <div class="box">Seven</div>
+    <div class="box">Eight</div>
+    </div>
+  </body>
+</html>
